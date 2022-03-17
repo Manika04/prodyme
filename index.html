@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+       <ul>
+        <li><input type="text" placeholder="Search" class="search"><i class="fa fa-thin fa-magnifying-glass"></i></li>
+        <i class="fa fa-light fa-cart-shopping" style="cursor: pointer;"></i>
+        <li>Contact Us</li>
+        <li>Login/Sign Up</li>
+       </ul>
+            
+    </nav>
+
+    <div id="home">
+        <section class="left">
+            <div class="sub-heading">Home/<b>Product Detail Page</b></div>
+            <div class="tags">
+                <h1>Tags: </h1>
+                <button class="btn">Kitchen</button>
+                <button class="btn">L-shape</button>
+                <button class="btn">Sustainable</button>
+            </div>
+            <div class="images">
+                <div class="sampleImg">
+                    <img src="https://img.freepik.com/free-vector/ink-splash-duotone-stripe-background_1409-1379.jpg?size=626&ext=jpg" alt="sample img 1" class="img">
+                    <img src="https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131__480.jpg" alt="sample img2" class="img" style="border: 2px solid white;">
+                    <img src="https://empire-s3-production.bobvila.com/articles/wp-content/uploads/2020/04/Types-of-Wall-Texture-sand-swirl.jpg" alt="sample img 3" class="img">
+                    <img src="https://us.123rf.com/450wm/katiaj/katiaj2001/katiaj200100079/137870128-concrete-wall-texture-abstract-gray-background-.jpg?ver=6" alt="sample img 4" class="img">
+                    <i class="fa fa-thin fa-angle-down"></i>
+            </div>
+            <div class="enlarged-img">
+                <img src="https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131__480.jpg" alt="sample img2" class="img-overlap img">
+            </div>
+            </div>
+            
+        </section>
+        <section class="right">
+            <div class="right-header">
+                <h4>Navigation Category A <i class="fa fa-thin fa-angle-down" style="margin-left: 10px;"></i></h4>
+                <h4>Navigation Item A</h4>
+            </div>
+
+            <div class="heading">
+                <h1 class="main-heading">Product Name ABC</h1>
+                <p class="sub-heading">Product Category Name[Example: Plywood]</p>
+            </div>
+
+            <div class="reviews">
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+
+                    <span class="number">4.4</span>
+                    <span class="number-review">(328 reviews)</span>
+                </div>
+                <div class="build">
+                    <a href="">Build My Project</a>
+                </div>
+
+                <div class="price">
+                    <span><i class="fa fa-thin fa-indian-rupee-sign"></i><span style="font-size: 28px;">2100.00</span> per Sheet</span>
+                </div>
+            </div>
+
+            <div class="desc">
+                <h1>Product Description</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sunt ex dicta obcaecati? Commodi adipisci ut ducimus vero mollitia. Tempore quidem suscipit unde provident quas necessitatibus id eos laboriosam cupiditate?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, voluptatem repudiandae amet labore veritatis laboriosam nisi officiis delectus inventore, quia suscipit sit odit quas quidem magni, nulla distinctio. Minus deleniti porro hic?Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animi doloribus, beatae consectetur deserunt minima eos vel, illum maxime dolor in, labore recusandae iusto amet? Consequuntur eaque mollitia atque quod. Amet, reprehenderit?</p>
+            </div>
+            <div class="availability">
+                <h4>Available Online 189</h4>
+                <div class="quantity">
+                    <p>Quantity</p>
+                    <button id="minus" onclick="decrement()">-</button>
+                    <span id="value-display">1</span>
+                    <button id="plus" onclick="increment()">+</button>
+                </div>
+                <!-- <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                    <option value="3">4</option>
+                  </select> -->
+                <button class="btn cart-button" style="background-color: orangered;">Add to Cart</button>
+            </div>
+            
+        </section>
+    </div>
+</body>
+<script>
+    // let value = 0;
+    // const valueDisplay = document.getElementById("value-display");
+
+    // function increment(){
+    //     // var value = parseInt(document.getElementsByClassName('plus').value, 10);
+    //     // value = isNaN(value) ? 1 : value;
+    //     // value++;
+    //     // document.getElementsByClassName('plus').value = value;
+    //     value++;
+    //     valueDisplay.innerText = value;
+    //     console.log("Value incremented");
+    // }
+
+    // function decrement(){
+    //     value--;
+    //     valueDisplay.innerText = value;
+    //     console.log("value decremented")
+    // }
+
+    // document.addEventListener("DOMContentLoaded", function(event) {
+    //     const cartButtons = document.querySelectorAll('.cart-button');
+    //     cartButtons.forEach(button => {
+    //     button.addEventListener('click',cartClick);
+    //     });
+
+    //     function cartClick(){
+    //     let button =this;
+    //     button.classList.add('clicked');
+    //     console.log("clicked");
+    //     }
+    //     });
+
+    // let increment = document.querySelector('#plus');
+    // let decrement = document.querySelector('#minus');
+    // let input = document.querySelector('input');
+
+    // increment.addEventListener('click', () => {
+    //     input.value = parseInt(input.value) + 1;
+    // });
+    // decrement.addEventListener('click', () => {
+    //     input.value = parseInt(input.value) - 1;
+    // });
+
+</script>
+<script src="https://kit.fontawesome.com/a896e02f86.js" crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+
+</html>
